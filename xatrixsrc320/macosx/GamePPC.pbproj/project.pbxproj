@@ -1,0 +1,1400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		014CEA410018CDE011CA2923 = {
+			isa = PBXBundleReference;
+			path = GamePPC.q2plug;
+			refType = 3;
+		};
+		014CEA420018CDE011CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA430018CDE011CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//080
+//081
+//082
+//083
+//084
+		089C1669FE841209C02AAC07 = {
+			buildStyles = (
+				014CEA420018CDE011CA2923,
+				014CEA430018CDE011CA2923,
+			);
+			isa = PBXProject;
+			mainGroup = 089C166AFE841209C02AAC07;
+			projectDirPath = "";
+			targets = (
+				089C1673FE841209C02AAC07,
+			);
+		};
+		089C166AFE841209C02AAC07 = {
+			children = (
+				F5F47CF4001238AD0131360A,
+				19C28FB8FE9D52D311CA2CBB,
+			);
+			isa = PBXGroup;
+			name = GamePPC;
+			refType = 4;
+		};
+		089C1673FE841209C02AAC07 = {
+			buildPhases = (
+				089C1674FE841209C02AAC07,
+				089C1675FE841209C02AAC07,
+				089C1676FE841209C02AAC07,
+				089C1677FE841209C02AAC07,
+				F599B460031FA512018952B5,
+				089C1679FE841209C02AAC07,
+			);
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-ffast-math -funroll-loops -fomit-frame-pointer -fexpensive-optimizations";
+				OTHER_LDFLAGS = "-bundle -undefined error";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GamePPC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = q2plug;
+			};
+			dependencies = (
+			);
+			isa = PBXBundleTarget;
+			name = Xatrix;
+			productName = GamePPC;
+			productReference = 014CEA410018CDE011CA2923;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>GamePPC</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Xatrix v3.2.0</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Xatrix</string>
+	<key>CFBundlePackageType</key>
+	<string>q2pl</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.2.0</string>
+	<key>CFBundleSignature</key>
+	<string>Qua2</string>
+	<key>CFBundleVersion</key>
+	<string>3.2.0</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
+</dict>
+</plist>
+";
+			shouldUseHeadermap = 1;
+		};
+		089C1674FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5F47D8A001239460131360A,
+				F5F47D8B001239460131360A,
+				F5F47D3F0012392E0131360A,
+				F5F47D400012392E0131360A,
+				F5F47D410012392E0131360A,
+				F5F47D420012392E0131360A,
+				F5F47D430012392E0131360A,
+				F5F47D440012392E0131360A,
+				F5F47D450012392E0131360A,
+				F5F47D460012392E0131360A,
+				F5F47D470012392E0131360A,
+				F5F47D480012392E0131360A,
+				F5F47D490012392E0131360A,
+				F5F47D4A0012392E0131360A,
+				F5F47D4B0012392E0131360A,
+				F5F47D4C0012392E0131360A,
+				F5F47D4D0012392E0131360A,
+				F5F47D4E0012392E0131360A,
+				F5F47D4F0012392E0131360A,
+				F5F47D500012392E0131360A,
+				F5F47D510012392E0131360A,
+				F5F47D520012392E0131360A,
+				F5F47D530012392E0131360A,
+				F5F47D540012392E0131360A,
+				F5F47D550012392E0131360A,
+				F5F47D560012392E0131360A,
+				F5F47D570012392E0131360A,
+				F5F47D580012392E0131360A,
+				F5F47D06001238D50131360A,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1675FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1676FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5F47D8C001239460131360A,
+				F5F47D8D001239460131360A,
+				F5F47D8E001239460131360A,
+				F5F47D8F001239460131360A,
+				F5F47D90001239460131360A,
+				F5F47D91001239460131360A,
+				F5F47D92001239460131360A,
+				F5F47D93001239460131360A,
+				F5F47D94001239460131360A,
+				F5F47D95001239460131360A,
+				F5F47D96001239460131360A,
+				F5F47D97001239460131360A,
+				F5F47D98001239460131360A,
+				F5F47D99001239460131360A,
+				F5F47D9A001239460131360A,
+				F5F47D9B001239460131360A,
+				F5F47D9C001239460131360A,
+				F5F47D9D001239460131360A,
+				F5F47D590012392E0131360A,
+				F5F47D5A0012392E0131360A,
+				F5F47D5B0012392E0131360A,
+				F5F47D5C0012392E0131360A,
+				F5F47D5D0012392E0131360A,
+				F5F47D5E0012392E0131360A,
+				F5F47D5F0012392E0131360A,
+				F5F47D600012392E0131360A,
+				F5F47D610012392E0131360A,
+				F5F47D620012392E0131360A,
+				F5F47D630012392E0131360A,
+				F5F47D640012392E0131360A,
+				F5F47D650012392E0131360A,
+				F5F47D660012392E0131360A,
+				F5F47D670012392E0131360A,
+				F5F47D680012392E0131360A,
+				F5F47D690012392E0131360A,
+				F5F47D6A0012392E0131360A,
+				F5F47D6B0012392E0131360A,
+				F5F47D6C0012392E0131360A,
+				F5F47D6D0012392E0131360A,
+				F5F47D6E0012392E0131360A,
+				F5F47D6F0012392E0131360A,
+				F5F47D700012392E0131360A,
+				F5F47D710012392E0131360A,
+				F5F47D720012392E0131360A,
+				F5F47D730012392E0131360A,
+				F5F47D740012392E0131360A,
+				F5F47CFE001238C10131360A,
+				F5F47CFF001238C10131360A,
+				F5F47D00001238C10131360A,
+				F5F47D01001238C10131360A,
+				F5F47D02001238C10131360A,
+				F5F47D07001238D50131360A,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1677FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1679FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+//080
+//081
+//082
+//083
+//084
+//190
+//191
+//192
+//193
+//194
+		19C28FB8FE9D52D311CA2CBB = {
+			children = (
+				014CEA410018CDE011CA2923,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+//190
+//191
+//192
+//193
+//194
+//F50
+//F51
+//F52
+//F53
+//F54
+		F599B460031FA512018952B5 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			neededFileNames = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"q2plQua2\" > \"${OBJROOT}/GamePPC.q2plug/Contents/PkgInfo\"\nrm \"${OBJROOT}/GamePPC.q2plug/Contents/pbdevelopment.plist\"";
+		};
+		F5F47CF4001238AD0131360A = {
+			children = (
+				F5F47CF5001238AD0131360A,
+				F5F47CF6001238AD0131360A,
+				F5F47CF7001238AD0131360A,
+				F5F47CF8001238AD0131360A,
+			);
+			isa = PBXGroup;
+			name = Sourcecode;
+			refType = 4;
+		};
+		F5F47CF5001238AD0131360A = {
+			children = (
+				F5F47D75001239460131360A,
+				F5F47D78001239460131360A,
+				F5F47D79001239460131360A,
+				F5F47D7A001239460131360A,
+				F5F47D7B001239460131360A,
+				F5F47D7C001239460131360A,
+				F5F47D7D001239460131360A,
+				F5F47D7E001239460131360A,
+				F5F47D7F001239460131360A,
+				F5F47D80001239460131360A,
+				F5F47D81001239460131360A,
+				F5F47D82001239460131360A,
+				F5F47D83001239460131360A,
+				F5F47D84001239460131360A,
+				F5F47D85001239460131360A,
+				F5F47D86001239460131360A,
+				F5F47D87001239460131360A,
+				F5F47D88001239460131360A,
+				F5F47D89001239460131360A,
+			);
+			isa = PBXGroup;
+			name = Game;
+			refType = 4;
+		};
+		F5F47CF6001238AD0131360A = {
+			children = (
+				F5F47D080012392E0131360A,
+				F5F47D230012392E0131360A,
+				F5F47D240012392E0131360A,
+				F5F47D250012392E0131360A,
+				F5F47D260012392E0131360A,
+				F5F47D270012392E0131360A,
+				F5F47D280012392E0131360A,
+				F5F47D290012392E0131360A,
+				F5F47D2A0012392E0131360A,
+				F5F47D2B0012392E0131360A,
+				F5F47D2C0012392E0131360A,
+				F5F47D2D0012392E0131360A,
+				F5F47D2E0012392E0131360A,
+				F5F47D2F0012392E0131360A,
+				F5F47D300012392E0131360A,
+				F5F47D310012392E0131360A,
+				F5F47D320012392E0131360A,
+				F5F47D330012392E0131360A,
+				F5F47D340012392E0131360A,
+				F5F47D350012392E0131360A,
+				F5F47D360012392E0131360A,
+				F5F47D370012392E0131360A,
+				F5F47D380012392E0131360A,
+				F5F47D390012392E0131360A,
+				F5F47D3A0012392E0131360A,
+				F5F47D3B0012392E0131360A,
+				F5F47D3C0012392E0131360A,
+				F5F47D3D0012392E0131360A,
+				F5F47D3E0012392E0131360A,
+			);
+			isa = PBXGroup;
+			name = Monster;
+			refType = 4;
+		};
+		F5F47CF7001238AD0131360A = {
+			children = (
+				F5F47CF9001238C10131360A,
+				F5F47CFA001238C10131360A,
+				F5F47CFB001238C10131360A,
+				F5F47CFC001238C10131360A,
+				F5F47CFD001238C10131360A,
+			);
+			isa = PBXGroup;
+			name = Player;
+			refType = 4;
+		};
+		F5F47CF8001238AD0131360A = {
+			children = (
+				F5F47D03001238D40131360A,
+				F5F47D05001238D40131360A,
+			);
+			isa = PBXGroup;
+			name = Shared;
+			refType = 4;
+		};
+		F5F47CF9001238C10131360A = {
+			isa = PBXFileReference;
+			name = p_client.c;
+			path = ../p_client.c;
+			refType = 2;
+		};
+		F5F47CFA001238C10131360A = {
+			isa = PBXFileReference;
+			name = p_hud.c;
+			path = ../p_hud.c;
+			refType = 2;
+		};
+		F5F47CFB001238C10131360A = {
+			isa = PBXFileReference;
+			name = p_trail.c;
+			path = ../p_trail.c;
+			refType = 2;
+		};
+		F5F47CFC001238C10131360A = {
+			isa = PBXFileReference;
+			name = p_view.c;
+			path = ../p_view.c;
+			refType = 2;
+		};
+		F5F47CFD001238C10131360A = {
+			isa = PBXFileReference;
+			name = p_weapon.c;
+			path = ../p_weapon.c;
+			refType = 2;
+		};
+		F5F47CFE001238C10131360A = {
+			fileRef = F5F47CF9001238C10131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47CFF001238C10131360A = {
+			fileRef = F5F47CFA001238C10131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D00001238C10131360A = {
+			fileRef = F5F47CFB001238C10131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D01001238C10131360A = {
+			fileRef = F5F47CFC001238C10131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D02001238C10131360A = {
+			fileRef = F5F47CFD001238C10131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D03001238D40131360A = {
+			children = (
+				F5F47D04001238D40131360A,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		F5F47D04001238D40131360A = {
+			isa = PBXFileReference;
+			name = q_shared.h;
+			path = ../q_shared.h;
+			refType = 2;
+		};
+		F5F47D05001238D40131360A = {
+			isa = PBXFileReference;
+			name = q_shared.c;
+			path = ../q_shared.c;
+			refType = 2;
+		};
+		F5F47D06001238D50131360A = {
+			fileRef = F5F47D04001238D40131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D07001238D50131360A = {
+			fileRef = F5F47D05001238D40131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D080012392E0131360A = {
+			children = (
+				F5F47D090012392E0131360A,
+				F5F47D0A0012392E0131360A,
+				F5F47D0B0012392E0131360A,
+				F5F47D0C0012392E0131360A,
+				F5F47D0D0012392E0131360A,
+				F5F47D0E0012392E0131360A,
+				F5F47D0F0012392E0131360A,
+				F5F47D100012392E0131360A,
+				F5F47D110012392E0131360A,
+				F5F47D120012392E0131360A,
+				F5F47D130012392E0131360A,
+				F5F47D140012392E0131360A,
+				F5F47D150012392E0131360A,
+				F5F47D160012392E0131360A,
+				F5F47D170012392E0131360A,
+				F5F47D180012392E0131360A,
+				F5F47D190012392E0131360A,
+				F5F47D1A0012392E0131360A,
+				F5F47D1B0012392E0131360A,
+				F5F47D1C0012392E0131360A,
+				F5F47D1D0012392E0131360A,
+				F5F47D1E0012392E0131360A,
+				F5F47D1F0012392E0131360A,
+				F5F47D200012392E0131360A,
+				F5F47D210012392E0131360A,
+				F5F47D220012392E0131360A,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		F5F47D090012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_actor.h;
+			path = ../m_actor.h;
+			refType = 2;
+		};
+		F5F47D0A0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_berserk.h;
+			path = ../m_berserk.h;
+			refType = 2;
+		};
+		F5F47D0B0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss2.h;
+			path = ../m_boss2.h;
+			refType = 2;
+		};
+		F5F47D0C0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss31.h;
+			path = ../m_boss31.h;
+			refType = 2;
+		};
+		F5F47D0D0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss32.h;
+			path = ../m_boss32.h;
+			refType = 2;
+		};
+		F5F47D0E0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_brain.h;
+			path = ../m_brain.h;
+			refType = 2;
+		};
+		F5F47D0F0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_chick.h;
+			path = ../m_chick.h;
+			refType = 2;
+		};
+		F5F47D100012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_fixbot.h;
+			path = ../m_fixbot.h;
+			refType = 2;
+		};
+		F5F47D110012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_flipper.h;
+			path = ../m_flipper.h;
+			refType = 2;
+		};
+		F5F47D120012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_float.h;
+			path = ../m_float.h;
+			refType = 2;
+		};
+		F5F47D130012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_flyer.h;
+			path = ../m_flyer.h;
+			refType = 2;
+		};
+		F5F47D140012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gekk.h;
+			path = ../m_gekk.h;
+			refType = 2;
+		};
+		F5F47D150012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gladiator.h;
+			path = ../m_gladiator.h;
+			refType = 2;
+		};
+		F5F47D160012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gunner.h;
+			path = ../m_gunner.h;
+			refType = 2;
+		};
+		F5F47D170012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_hover.h;
+			path = ../m_hover.h;
+			refType = 2;
+		};
+		F5F47D180012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_infantry.h;
+			path = ../m_infantry.h;
+			refType = 2;
+		};
+		F5F47D190012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_insane.h;
+			path = ../m_insane.h;
+			refType = 2;
+		};
+		F5F47D1A0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_medic.h;
+			path = ../m_medic.h;
+			refType = 2;
+		};
+		F5F47D1B0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_mutant.h;
+			path = ../m_mutant.h;
+			refType = 2;
+		};
+		F5F47D1C0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_parasite.h;
+			path = ../m_parasite.h;
+			refType = 2;
+		};
+		F5F47D1D0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_player.h;
+			path = ../m_player.h;
+			refType = 2;
+		};
+		F5F47D1E0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_rider.h;
+			path = ../m_rider.h;
+			refType = 2;
+		};
+		F5F47D1F0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_soldier.h;
+			path = ../m_soldier.h;
+			refType = 2;
+		};
+		F5F47D200012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_soldierh.h;
+			path = ../m_soldierh.h;
+			refType = 2;
+		};
+		F5F47D210012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_supertank.h;
+			path = ../m_supertank.h;
+			refType = 2;
+		};
+		F5F47D220012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_tank.h;
+			path = ../m_tank.h;
+			refType = 2;
+		};
+		F5F47D230012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_actor.c;
+			path = ../m_actor.c;
+			refType = 2;
+		};
+		F5F47D240012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_berserk.c;
+			path = ../m_berserk.c;
+			refType = 2;
+		};
+		F5F47D250012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss2.c;
+			path = ../m_boss2.c;
+			refType = 2;
+		};
+		F5F47D260012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss3.c;
+			path = ../m_boss3.c;
+			refType = 2;
+		};
+		F5F47D270012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss5.c;
+			path = ../m_boss5.c;
+			refType = 2;
+		};
+		F5F47D280012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss31.c;
+			path = ../m_boss31.c;
+			refType = 2;
+		};
+		F5F47D290012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_boss32.c;
+			path = ../m_boss32.c;
+			refType = 2;
+		};
+		F5F47D2A0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_brain.c;
+			path = ../m_brain.c;
+			refType = 2;
+		};
+		F5F47D2B0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_chick.c;
+			path = ../m_chick.c;
+			refType = 2;
+		};
+		F5F47D2C0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_fixbot.c;
+			path = ../m_fixbot.c;
+			refType = 2;
+		};
+		F5F47D2D0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_flash.c;
+			path = ../m_flash.c;
+			refType = 2;
+		};
+		F5F47D2E0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_flipper.c;
+			path = ../m_flipper.c;
+			refType = 2;
+		};
+		F5F47D2F0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_float.c;
+			path = ../m_float.c;
+			refType = 2;
+		};
+		F5F47D300012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_flyer.c;
+			path = ../m_flyer.c;
+			refType = 2;
+		};
+		F5F47D310012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gekk.c;
+			path = ../m_gekk.c;
+			refType = 2;
+		};
+		F5F47D320012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gladb.c;
+			path = ../m_gladb.c;
+			refType = 2;
+		};
+		F5F47D330012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gladiator.c;
+			path = ../m_gladiator.c;
+			refType = 2;
+		};
+		F5F47D340012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_gunner.c;
+			path = ../m_gunner.c;
+			refType = 2;
+		};
+		F5F47D350012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_hover.c;
+			path = ../m_hover.c;
+			refType = 2;
+		};
+		F5F47D360012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_infantry.c;
+			path = ../m_infantry.c;
+			refType = 2;
+		};
+		F5F47D370012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_insane.c;
+			path = ../m_insane.c;
+			refType = 2;
+		};
+		F5F47D380012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_medic.c;
+			path = ../m_medic.c;
+			refType = 2;
+		};
+		F5F47D390012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_move.c;
+			path = ../m_move.c;
+			refType = 2;
+		};
+		F5F47D3A0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_mutant.c;
+			path = ../m_mutant.c;
+			refType = 2;
+		};
+		F5F47D3B0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_parasite.c;
+			path = ../m_parasite.c;
+			refType = 2;
+		};
+		F5F47D3C0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_soldier.c;
+			path = ../m_soldier.c;
+			refType = 2;
+		};
+		F5F47D3D0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_supertank.c;
+			path = ../m_supertank.c;
+			refType = 2;
+		};
+		F5F47D3E0012392E0131360A = {
+			isa = PBXFileReference;
+			name = m_tank.c;
+			path = ../m_tank.c;
+			refType = 2;
+		};
+		F5F47D3F0012392E0131360A = {
+			fileRef = F5F47D090012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D400012392E0131360A = {
+			fileRef = F5F47D0A0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D410012392E0131360A = {
+			fileRef = F5F47D0B0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D420012392E0131360A = {
+			fileRef = F5F47D0C0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D430012392E0131360A = {
+			fileRef = F5F47D0D0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D440012392E0131360A = {
+			fileRef = F5F47D0E0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D450012392E0131360A = {
+			fileRef = F5F47D0F0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D460012392E0131360A = {
+			fileRef = F5F47D100012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D470012392E0131360A = {
+			fileRef = F5F47D110012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D480012392E0131360A = {
+			fileRef = F5F47D120012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D490012392E0131360A = {
+			fileRef = F5F47D130012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4A0012392E0131360A = {
+			fileRef = F5F47D140012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4B0012392E0131360A = {
+			fileRef = F5F47D150012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4C0012392E0131360A = {
+			fileRef = F5F47D160012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4D0012392E0131360A = {
+			fileRef = F5F47D170012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4E0012392E0131360A = {
+			fileRef = F5F47D180012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D4F0012392E0131360A = {
+			fileRef = F5F47D190012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D500012392E0131360A = {
+			fileRef = F5F47D1A0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D510012392E0131360A = {
+			fileRef = F5F47D1B0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D520012392E0131360A = {
+			fileRef = F5F47D1C0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D530012392E0131360A = {
+			fileRef = F5F47D1D0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D540012392E0131360A = {
+			fileRef = F5F47D1E0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D550012392E0131360A = {
+			fileRef = F5F47D1F0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D560012392E0131360A = {
+			fileRef = F5F47D200012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D570012392E0131360A = {
+			fileRef = F5F47D210012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D580012392E0131360A = {
+			fileRef = F5F47D220012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D590012392E0131360A = {
+			fileRef = F5F47D230012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5A0012392E0131360A = {
+			fileRef = F5F47D240012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5B0012392E0131360A = {
+			fileRef = F5F47D250012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5C0012392E0131360A = {
+			fileRef = F5F47D260012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5D0012392E0131360A = {
+			fileRef = F5F47D270012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5E0012392E0131360A = {
+			fileRef = F5F47D280012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D5F0012392E0131360A = {
+			fileRef = F5F47D290012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D600012392E0131360A = {
+			fileRef = F5F47D2A0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D610012392E0131360A = {
+			fileRef = F5F47D2B0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D620012392E0131360A = {
+			fileRef = F5F47D2C0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D630012392E0131360A = {
+			fileRef = F5F47D2D0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D640012392E0131360A = {
+			fileRef = F5F47D2E0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D650012392E0131360A = {
+			fileRef = F5F47D2F0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D660012392E0131360A = {
+			fileRef = F5F47D300012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D670012392E0131360A = {
+			fileRef = F5F47D310012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D680012392E0131360A = {
+			fileRef = F5F47D320012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D690012392E0131360A = {
+			fileRef = F5F47D330012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6A0012392E0131360A = {
+			fileRef = F5F47D340012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6B0012392E0131360A = {
+			fileRef = F5F47D350012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6C0012392E0131360A = {
+			fileRef = F5F47D360012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6D0012392E0131360A = {
+			fileRef = F5F47D370012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6E0012392E0131360A = {
+			fileRef = F5F47D380012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D6F0012392E0131360A = {
+			fileRef = F5F47D390012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D700012392E0131360A = {
+			fileRef = F5F47D3A0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D710012392E0131360A = {
+			fileRef = F5F47D3B0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D720012392E0131360A = {
+			fileRef = F5F47D3C0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D730012392E0131360A = {
+			fileRef = F5F47D3D0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D740012392E0131360A = {
+			fileRef = F5F47D3E0012392E0131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D75001239460131360A = {
+			children = (
+				F5F47D76001239460131360A,
+				F5F47D77001239460131360A,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		F5F47D76001239460131360A = {
+			isa = PBXFileReference;
+			name = g_local.h;
+			path = ../g_local.h;
+			refType = 2;
+		};
+		F5F47D77001239460131360A = {
+			isa = PBXFileReference;
+			name = game.h;
+			path = ../game.h;
+			refType = 2;
+		};
+		F5F47D78001239460131360A = {
+			isa = PBXFileReference;
+			name = g_ai.c;
+			path = ../g_ai.c;
+			refType = 2;
+		};
+		F5F47D79001239460131360A = {
+			isa = PBXFileReference;
+			name = g_chase.c;
+			path = ../g_chase.c;
+			refType = 2;
+		};
+		F5F47D7A001239460131360A = {
+			isa = PBXFileReference;
+			name = g_cmds.c;
+			path = ../g_cmds.c;
+			refType = 2;
+		};
+		F5F47D7B001239460131360A = {
+			isa = PBXFileReference;
+			name = g_combat.c;
+			path = ../g_combat.c;
+			refType = 2;
+		};
+		F5F47D7C001239460131360A = {
+			isa = PBXFileReference;
+			name = g_func.c;
+			path = ../g_func.c;
+			refType = 2;
+		};
+		F5F47D7D001239460131360A = {
+			isa = PBXFileReference;
+			name = g_items.c;
+			path = ../g_items.c;
+			refType = 2;
+		};
+		F5F47D7E001239460131360A = {
+			isa = PBXFileReference;
+			name = g_main.c;
+			path = ../g_main.c;
+			refType = 2;
+		};
+		F5F47D7F001239460131360A = {
+			isa = PBXFileReference;
+			name = g_misc.c;
+			path = ../g_misc.c;
+			refType = 2;
+		};
+		F5F47D80001239460131360A = {
+			isa = PBXFileReference;
+			name = g_monster.c;
+			path = ../g_monster.c;
+			refType = 2;
+		};
+		F5F47D81001239460131360A = {
+			isa = PBXFileReference;
+			name = g_phys.c;
+			path = ../g_phys.c;
+			refType = 2;
+		};
+		F5F47D82001239460131360A = {
+			isa = PBXFileReference;
+			name = g_save.c;
+			path = ../g_save.c;
+			refType = 2;
+		};
+		F5F47D83001239460131360A = {
+			isa = PBXFileReference;
+			name = g_spawn.c;
+			path = ../g_spawn.c;
+			refType = 2;
+		};
+		F5F47D84001239460131360A = {
+			isa = PBXFileReference;
+			name = g_svcmds.c;
+			path = ../g_svcmds.c;
+			refType = 2;
+		};
+		F5F47D85001239460131360A = {
+			isa = PBXFileReference;
+			name = g_target.c;
+			path = ../g_target.c;
+			refType = 2;
+		};
+		F5F47D86001239460131360A = {
+			isa = PBXFileReference;
+			name = g_trigger.c;
+			path = ../g_trigger.c;
+			refType = 2;
+		};
+		F5F47D87001239460131360A = {
+			isa = PBXFileReference;
+			name = g_turret.c;
+			path = ../g_turret.c;
+			refType = 2;
+		};
+		F5F47D88001239460131360A = {
+			isa = PBXFileReference;
+			name = g_utils.c;
+			path = ../g_utils.c;
+			refType = 2;
+		};
+		F5F47D89001239460131360A = {
+			isa = PBXFileReference;
+			name = g_weapon.c;
+			path = ../g_weapon.c;
+			refType = 2;
+		};
+		F5F47D8A001239460131360A = {
+			fileRef = F5F47D76001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D8B001239460131360A = {
+			fileRef = F5F47D77001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D8C001239460131360A = {
+			fileRef = F5F47D78001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D8D001239460131360A = {
+			fileRef = F5F47D79001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D8E001239460131360A = {
+			fileRef = F5F47D7A001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D8F001239460131360A = {
+			fileRef = F5F47D7B001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D90001239460131360A = {
+			fileRef = F5F47D7C001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D91001239460131360A = {
+			fileRef = F5F47D7D001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D92001239460131360A = {
+			fileRef = F5F47D7E001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D93001239460131360A = {
+			fileRef = F5F47D7F001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D94001239460131360A = {
+			fileRef = F5F47D80001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D95001239460131360A = {
+			fileRef = F5F47D81001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D96001239460131360A = {
+			fileRef = F5F47D82001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D97001239460131360A = {
+			fileRef = F5F47D83001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D98001239460131360A = {
+			fileRef = F5F47D84001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D99001239460131360A = {
+			fileRef = F5F47D85001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D9A001239460131360A = {
+			fileRef = F5F47D86001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D9B001239460131360A = {
+			fileRef = F5F47D87001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D9C001239460131360A = {
+			fileRef = F5F47D88001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F47D9D001239460131360A = {
+			fileRef = F5F47D89001239460131360A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 089C1669FE841209C02AAC07;
+}

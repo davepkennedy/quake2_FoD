@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D22A7C6909F42C0200FC9B21 /* q_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C6709F42C0200FC9B21 /* q_shared.c */; };
+		D22A7C7309F42C1900FC9B21 /* p_client.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C6E09F42C1900FC9B21 /* p_client.c */; };
+		D22A7C7409F42C1900FC9B21 /* p_hud.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C6F09F42C1900FC9B21 /* p_hud.c */; };
+		D22A7C7509F42C1900FC9B21 /* p_trail.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C7009F42C1900FC9B21 /* p_trail.c */; };
+		D22A7C7609F42C1900FC9B21 /* p_view.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C7109F42C1900FC9B21 /* p_view.c */; };
+		D22A7C7709F42C1900FC9B21 /* p_weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C7209F42C1900FC9B21 /* p_weapon.c */; };
+		D22A7CB609F42C3E00FC9B21 /* m_actor.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C7C09F42C3D00FC9B21 /* m_actor.c */; };
+		D22A7CB709F42C3E00FC9B21 /* m_berserk.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C7E09F42C3D00FC9B21 /* m_berserk.c */; };
+		D22A7CB809F42C3E00FC9B21 /* m_boss2.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8009F42C3D00FC9B21 /* m_boss2.c */; };
+		D22A7CB909F42C3E00FC9B21 /* m_boss3.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8209F42C3D00FC9B21 /* m_boss3.c */; };
+		D22A7CBA09F42C3E00FC9B21 /* m_boss31.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8309F42C3D00FC9B21 /* m_boss31.c */; };
+		D22A7CBB09F42C3E00FC9B21 /* m_boss32.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8509F42C3D00FC9B21 /* m_boss32.c */; };
+		D22A7CBC09F42C3E00FC9B21 /* m_brain.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8709F42C3D00FC9B21 /* m_brain.c */; };
+		D22A7CBD09F42C3E00FC9B21 /* m_carrier.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8909F42C3D00FC9B21 /* m_carrier.c */; };
+		D22A7CBE09F42C3E00FC9B21 /* m_chick.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8B09F42C3D00FC9B21 /* m_chick.c */; };
+		D22A7CBF09F42C3E00FC9B21 /* m_flash.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8D09F42C3D00FC9B21 /* m_flash.c */; };
+		D22A7CC009F42C3E00FC9B21 /* m_flipper.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C8E09F42C3D00FC9B21 /* m_flipper.c */; };
+		D22A7CC109F42C3E00FC9B21 /* m_float.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9009F42C3D00FC9B21 /* m_float.c */; };
+		D22A7CC209F42C3E00FC9B21 /* m_flyer.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9209F42C3D00FC9B21 /* m_flyer.c */; };
+		D22A7CC309F42C3E00FC9B21 /* m_gladiator.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9409F42C3D00FC9B21 /* m_gladiator.c */; };
+		D22A7CC409F42C3E00FC9B21 /* m_gunner.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9609F42C3D00FC9B21 /* m_gunner.c */; };
+		D22A7CC509F42C3E00FC9B21 /* m_hover.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9809F42C3D00FC9B21 /* m_hover.c */; };
+		D22A7CC609F42C3E00FC9B21 /* m_infantry.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9A09F42C3D00FC9B21 /* m_infantry.c */; };
+		D22A7CC709F42C3E00FC9B21 /* m_insane.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9C09F42C3D00FC9B21 /* m_insane.c */; };
+		D22A7CC809F42C3E00FC9B21 /* m_medic.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7C9E09F42C3E00FC9B21 /* m_medic.c */; };
+		D22A7CC909F42C3E00FC9B21 /* m_move.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CA009F42C3E00FC9B21 /* m_move.c */; };
+		D22A7CCB09F42C3E00FC9B21 /* m_mutant.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CA209F42C3E00FC9B21 /* m_mutant.c */; };
+		D22A7CCC09F42C3E00FC9B21 /* m_parasite.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CA409F42C3E00FC9B21 /* m_parasite.c */; };
+		D22A7CCD09F42C3E00FC9B21 /* m_soldier.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CA809F42C3E00FC9B21 /* m_soldier.c */; };
+		D22A7CCE09F42C3E00FC9B21 /* m_stalker.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CAA09F42C3E00FC9B21 /* m_stalker.c */; };
+		D22A7CCF09F42C3E00FC9B21 /* m_supertank.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CAC09F42C3E00FC9B21 /* m_supertank.c */; };
+		D22A7CD009F42C3E00FC9B21 /* m_tank.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CAE09F42C3E00FC9B21 /* m_tank.c */; };
+		D22A7CD109F42C3E00FC9B21 /* m_turret.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CB009F42C3E00FC9B21 /* m_turret.c */; };
+		D22A7CD209F42C3E00FC9B21 /* m_widow.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CB209F42C3E00FC9B21 /* m_widow.c */; };
+		D22A7CD309F42C3E00FC9B21 /* m_widow2.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CB409F42C3E00FC9B21 /* m_widow2.c */; };
+		D22A7CFD09F42CDE00FC9B21 /* g_ai.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE309F42CDE00FC9B21 /* g_ai.c */; };
+		D22A7CFE09F42CDE00FC9B21 /* g_chase.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE409F42CDE00FC9B21 /* g_chase.c */; };
+		D22A7CFF09F42CDE00FC9B21 /* g_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE509F42CDE00FC9B21 /* g_cmds.c */; };
+		D22A7D0009F42CDE00FC9B21 /* g_combat.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE609F42CDE00FC9B21 /* g_combat.c */; };
+		D22A7D0109F42CDE00FC9B21 /* g_func.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE709F42CDE00FC9B21 /* g_func.c */; };
+		D22A7D0209F42CDE00FC9B21 /* g_items.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CE809F42CDE00FC9B21 /* g_items.c */; };
+		D22A7D0309F42CDE00FC9B21 /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CEA09F42CDE00FC9B21 /* g_main.c */; };
+		D22A7D0409F42CDE00FC9B21 /* g_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CEB09F42CDE00FC9B21 /* g_misc.c */; };
+		D22A7D0509F42CDE00FC9B21 /* g_monster.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CEC09F42CDE00FC9B21 /* g_monster.c */; };
+		D22A7D0609F42CDE00FC9B21 /* g_newai.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CED09F42CDE00FC9B21 /* g_newai.c */; };
+		D22A7D0709F42CDE00FC9B21 /* g_newdm.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CEE09F42CDE00FC9B21 /* g_newdm.c */; };
+		D22A7D0809F42CDE00FC9B21 /* g_newfnc.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CEF09F42CDE00FC9B21 /* g_newfnc.c */; };
+		D22A7D0909F42CDE00FC9B21 /* g_newtarg.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF009F42CDE00FC9B21 /* g_newtarg.c */; };
+		D22A7D0A09F42CDE00FC9B21 /* g_newtrig.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF109F42CDE00FC9B21 /* g_newtrig.c */; };
+		D22A7D0B09F42CDE00FC9B21 /* g_newweap.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF209F42CDE00FC9B21 /* g_newweap.c */; };
+		D22A7D0C09F42CDE00FC9B21 /* g_phys.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF309F42CDE00FC9B21 /* g_phys.c */; };
+		D22A7D0D09F42CDE00FC9B21 /* g_save.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF409F42CDE00FC9B21 /* g_save.c */; };
+		D22A7D0E09F42CDE00FC9B21 /* g_spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF509F42CDE00FC9B21 /* g_spawn.c */; };
+		D22A7D0F09F42CDE00FC9B21 /* g_sphere.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF609F42CDE00FC9B21 /* g_sphere.c */; };
+		D22A7D1009F42CDE00FC9B21 /* g_svcmds.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF709F42CDE00FC9B21 /* g_svcmds.c */; };
+		D22A7D1109F42CDE00FC9B21 /* g_target.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF809F42CDE00FC9B21 /* g_target.c */; };
+		D22A7D1209F42CDE00FC9B21 /* g_trigger.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CF909F42CDE00FC9B21 /* g_trigger.c */; };
+		D22A7D1309F42CDE00FC9B21 /* g_turret.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CFA09F42CDE00FC9B21 /* g_turret.c */; };
+		D22A7D1409F42CDE00FC9B21 /* g_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CFB09F42CDE00FC9B21 /* g_utils.c */; };
+		D22A7D1509F42CDE00FC9B21 /* g_weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7CFC09F42CDE00FC9B21 /* g_weapon.c */; };
+		D22A7D1A09F42D2000FC9B21 /* dm_ball.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7D1809F42D2000FC9B21 /* dm_ball.c */; };
+		D22A7D1B09F42D2000FC9B21 /* dm_tag.c in Sources */ = {isa = PBXBuildFile; fileRef = D22A7D1909F42D2000FC9B21 /* dm_tag.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA420018CDE011CA2923 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		014CEA430018CDE011CA2923 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		8D5B49B6048680CD000E48DA /* GameMac.q2plug */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameMac.q2plug; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22A7C6709F42C0200FC9B21 /* q_shared.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = q_shared.c; path = ../q_shared.c; sourceTree = SOURCE_ROOT; };
+		D22A7C6809F42C0200FC9B21 /* q_shared.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = q_shared.h; path = ../q_shared.h; sourceTree = SOURCE_ROOT; };
+		D22A7C6E09F42C1900FC9B21 /* p_client.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = p_client.c; path = ../p_client.c; sourceTree = SOURCE_ROOT; };
+		D22A7C6F09F42C1900FC9B21 /* p_hud.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = p_hud.c; path = ../p_hud.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7009F42C1900FC9B21 /* p_trail.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = p_trail.c; path = ../p_trail.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7109F42C1900FC9B21 /* p_view.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = p_view.c; path = ../p_view.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7209F42C1900FC9B21 /* p_weapon.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = p_weapon.c; path = ../p_weapon.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7C09F42C3D00FC9B21 /* m_actor.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_actor.c; path = ../m_actor.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7D09F42C3D00FC9B21 /* m_actor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_actor.h; path = ../m_actor.h; sourceTree = SOURCE_ROOT; };
+		D22A7C7E09F42C3D00FC9B21 /* m_berserk.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_berserk.c; path = ../m_berserk.c; sourceTree = SOURCE_ROOT; };
+		D22A7C7F09F42C3D00FC9B21 /* m_berserk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_berserk.h; path = ../m_berserk.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8009F42C3D00FC9B21 /* m_boss2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_boss2.c; path = ../m_boss2.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8109F42C3D00FC9B21 /* m_boss2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_boss2.h; path = ../m_boss2.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8209F42C3D00FC9B21 /* m_boss3.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_boss3.c; path = ../m_boss3.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8309F42C3D00FC9B21 /* m_boss31.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_boss31.c; path = ../m_boss31.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8409F42C3D00FC9B21 /* m_boss31.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_boss31.h; path = ../m_boss31.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8509F42C3D00FC9B21 /* m_boss32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_boss32.c; path = ../m_boss32.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8609F42C3D00FC9B21 /* m_boss32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_boss32.h; path = ../m_boss32.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8709F42C3D00FC9B21 /* m_brain.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_brain.c; path = ../m_brain.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8809F42C3D00FC9B21 /* m_brain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_brain.h; path = ../m_brain.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8909F42C3D00FC9B21 /* m_carrier.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_carrier.c; path = ../m_carrier.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8A09F42C3D00FC9B21 /* m_carrier.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_carrier.h; path = ../m_carrier.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8B09F42C3D00FC9B21 /* m_chick.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_chick.c; path = ../m_chick.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8C09F42C3D00FC9B21 /* m_chick.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_chick.h; path = ../m_chick.h; sourceTree = SOURCE_ROOT; };
+		D22A7C8D09F42C3D00FC9B21 /* m_flash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_flash.c; path = ../m_flash.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8E09F42C3D00FC9B21 /* m_flipper.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_flipper.c; path = ../m_flipper.c; sourceTree = SOURCE_ROOT; };
+		D22A7C8F09F42C3D00FC9B21 /* m_flipper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_flipper.h; path = ../m_flipper.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9009F42C3D00FC9B21 /* m_float.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_float.c; path = ../m_float.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9109F42C3D00FC9B21 /* m_float.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_float.h; path = ../m_float.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9209F42C3D00FC9B21 /* m_flyer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_flyer.c; path = ../m_flyer.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9309F42C3D00FC9B21 /* m_flyer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_flyer.h; path = ../m_flyer.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9409F42C3D00FC9B21 /* m_gladiator.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_gladiator.c; path = ../m_gladiator.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9509F42C3D00FC9B21 /* m_gladiator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_gladiator.h; path = ../m_gladiator.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9609F42C3D00FC9B21 /* m_gunner.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_gunner.c; path = ../m_gunner.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9709F42C3D00FC9B21 /* m_gunner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_gunner.h; path = ../m_gunner.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9809F42C3D00FC9B21 /* m_hover.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_hover.c; path = ../m_hover.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9909F42C3D00FC9B21 /* m_hover.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_hover.h; path = ../m_hover.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9A09F42C3D00FC9B21 /* m_infantry.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_infantry.c; path = ../m_infantry.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9B09F42C3D00FC9B21 /* m_infantry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_infantry.h; path = ../m_infantry.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9C09F42C3D00FC9B21 /* m_insane.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_insane.c; path = ../m_insane.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9D09F42C3E00FC9B21 /* m_insane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_insane.h; path = ../m_insane.h; sourceTree = SOURCE_ROOT; };
+		D22A7C9E09F42C3E00FC9B21 /* m_medic.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_medic.c; path = ../m_medic.c; sourceTree = SOURCE_ROOT; };
+		D22A7C9F09F42C3E00FC9B21 /* m_medic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_medic.h; path = ../m_medic.h; sourceTree = SOURCE_ROOT; };
+		D22A7CA009F42C3E00FC9B21 /* m_move.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_move.c; path = ../m_move.c; sourceTree = SOURCE_ROOT; };
+		D22A7CA109F42C3E00FC9B21 /* m_move2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_move2.c; path = ../m_move2.c; sourceTree = SOURCE_ROOT; };
+		D22A7CA209F42C3E00FC9B21 /* m_mutant.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_mutant.c; path = ../m_mutant.c; sourceTree = SOURCE_ROOT; };
+		D22A7CA309F42C3E00FC9B21 /* m_mutant.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_mutant.h; path = ../m_mutant.h; sourceTree = SOURCE_ROOT; };
+		D22A7CA409F42C3E00FC9B21 /* m_parasite.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_parasite.c; path = ../m_parasite.c; sourceTree = SOURCE_ROOT; };
+		D22A7CA509F42C3E00FC9B21 /* m_parasite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_parasite.h; path = ../m_parasite.h; sourceTree = SOURCE_ROOT; };
+		D22A7CA609F42C3E00FC9B21 /* m_player.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_player.h; path = ../m_player.h; sourceTree = SOURCE_ROOT; };
+		D22A7CA709F42C3E00FC9B21 /* m_rider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_rider.h; path = ../m_rider.h; sourceTree = SOURCE_ROOT; };
+		D22A7CA809F42C3E00FC9B21 /* m_soldier.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_soldier.c; path = ../m_soldier.c; sourceTree = SOURCE_ROOT; };
+		D22A7CA909F42C3E00FC9B21 /* m_soldier.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_soldier.h; path = ../m_soldier.h; sourceTree = SOURCE_ROOT; };
+		D22A7CAA09F42C3E00FC9B21 /* m_stalker.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_stalker.c; path = ../m_stalker.c; sourceTree = SOURCE_ROOT; };
+		D22A7CAB09F42C3E00FC9B21 /* m_stalker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_stalker.h; path = ../m_stalker.h; sourceTree = SOURCE_ROOT; };
+		D22A7CAC09F42C3E00FC9B21 /* m_supertank.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_supertank.c; path = ../m_supertank.c; sourceTree = SOURCE_ROOT; };
+		D22A7CAD09F42C3E00FC9B21 /* m_supertank.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_supertank.h; path = ../m_supertank.h; sourceTree = SOURCE_ROOT; };
+		D22A7CAE09F42C3E00FC9B21 /* m_tank.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_tank.c; path = ../m_tank.c; sourceTree = SOURCE_ROOT; };
+		D22A7CAF09F42C3E00FC9B21 /* m_tank.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_tank.h; path = ../m_tank.h; sourceTree = SOURCE_ROOT; };
+		D22A7CB009F42C3E00FC9B21 /* m_turret.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_turret.c; path = ../m_turret.c; sourceTree = SOURCE_ROOT; };
+		D22A7CB109F42C3E00FC9B21 /* m_turret.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_turret.h; path = ../m_turret.h; sourceTree = SOURCE_ROOT; };
+		D22A7CB209F42C3E00FC9B21 /* m_widow.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_widow.c; path = ../m_widow.c; sourceTree = SOURCE_ROOT; };
+		D22A7CB309F42C3E00FC9B21 /* m_widow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_widow.h; path = ../m_widow.h; sourceTree = SOURCE_ROOT; };
+		D22A7CB409F42C3E00FC9B21 /* m_widow2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = m_widow2.c; path = ../m_widow2.c; sourceTree = SOURCE_ROOT; };
+		D22A7CB509F42C3E00FC9B21 /* m_widow2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = m_widow2.h; path = ../m_widow2.h; sourceTree = SOURCE_ROOT; };
+		D22A7CE309F42CDE00FC9B21 /* g_ai.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_ai.c; path = ../g_ai.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE409F42CDE00FC9B21 /* g_chase.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_chase.c; path = ../g_chase.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE509F42CDE00FC9B21 /* g_cmds.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_cmds.c; path = ../g_cmds.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE609F42CDE00FC9B21 /* g_combat.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_combat.c; path = ../g_combat.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE709F42CDE00FC9B21 /* g_func.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_func.c; path = ../g_func.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE809F42CDE00FC9B21 /* g_items.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_items.c; path = ../g_items.c; sourceTree = SOURCE_ROOT; };
+		D22A7CE909F42CDE00FC9B21 /* g_local.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = g_local.h; path = ../g_local.h; sourceTree = SOURCE_ROOT; };
+		D22A7CEA09F42CDE00FC9B21 /* g_main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_main.c; path = ../g_main.c; sourceTree = SOURCE_ROOT; };
+		D22A7CEB09F42CDE00FC9B21 /* g_misc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_misc.c; path = ../g_misc.c; sourceTree = SOURCE_ROOT; };
+		D22A7CEC09F42CDE00FC9B21 /* g_monster.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_monster.c; path = ../g_monster.c; sourceTree = SOURCE_ROOT; };
+		D22A7CED09F42CDE00FC9B21 /* g_newai.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newai.c; path = ../g_newai.c; sourceTree = SOURCE_ROOT; };
+		D22A7CEE09F42CDE00FC9B21 /* g_newdm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newdm.c; path = ../g_newdm.c; sourceTree = SOURCE_ROOT; };
+		D22A7CEF09F42CDE00FC9B21 /* g_newfnc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newfnc.c; path = ../g_newfnc.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF009F42CDE00FC9B21 /* g_newtarg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newtarg.c; path = ../g_newtarg.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF109F42CDE00FC9B21 /* g_newtrig.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newtrig.c; path = ../g_newtrig.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF209F42CDE00FC9B21 /* g_newweap.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_newweap.c; path = ../g_newweap.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF309F42CDE00FC9B21 /* g_phys.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_phys.c; path = ../g_phys.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF409F42CDE00FC9B21 /* g_save.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_save.c; path = ../g_save.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF509F42CDE00FC9B21 /* g_spawn.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_spawn.c; path = ../g_spawn.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF609F42CDE00FC9B21 /* g_sphere.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_sphere.c; path = ../g_sphere.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF709F42CDE00FC9B21 /* g_svcmds.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_svcmds.c; path = ../g_svcmds.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF809F42CDE00FC9B21 /* g_target.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_target.c; path = ../g_target.c; sourceTree = SOURCE_ROOT; };
+		D22A7CF909F42CDE00FC9B21 /* g_trigger.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_trigger.c; path = ../g_trigger.c; sourceTree = SOURCE_ROOT; };
+		D22A7CFA09F42CDE00FC9B21 /* g_turret.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_turret.c; path = ../g_turret.c; sourceTree = SOURCE_ROOT; };
+		D22A7CFB09F42CDE00FC9B21 /* g_utils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_utils.c; path = ../g_utils.c; sourceTree = SOURCE_ROOT; };
+		D22A7CFC09F42CDE00FC9B21 /* g_weapon.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = g_weapon.c; path = ../g_weapon.c; sourceTree = SOURCE_ROOT; };
+		D22A7D1709F42CF500FC9B21 /* game.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = game.h; path = ../game.h; sourceTree = SOURCE_ROOT; };
+		D22A7D1809F42D2000FC9B21 /* dm_ball.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dm_ball.c; path = ../dm_ball.c; sourceTree = SOURCE_ROOT; };
+		D22A7D1909F42D2000FC9B21 /* dm_tag.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dm_tag.c; path = ../dm_tag.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* GameMacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Sourcecode */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = GameMacOSX;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Sourcecode */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C6409F42BCE00FC9B21 /* Deathmatch */,
+				D22A7C6109F42BC200FC9B21 /* Game */,
+				D22A7C6009F42BBD00FC9B21 /* Monsters */,
+				D22A7C5F09F42BB700FC9B21 /* Player */,
+				D22A7C5D09F42BAC00FC9B21 /* Shared */,
+			);
+			name = Sourcecode;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* GameMac.q2plug */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D22A7C5D09F42BAC00FC9B21 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C5E09F42BB200FC9B21 /* Headers */,
+				D22A7C6709F42C0200FC9B21 /* q_shared.c */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		D22A7C5E09F42BB200FC9B21 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C6809F42C0200FC9B21 /* q_shared.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D22A7C5F09F42BB700FC9B21 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C6E09F42C1900FC9B21 /* p_client.c */,
+				D22A7C6F09F42C1900FC9B21 /* p_hud.c */,
+				D22A7C7009F42C1900FC9B21 /* p_trail.c */,
+				D22A7C7109F42C1900FC9B21 /* p_view.c */,
+				D22A7C7209F42C1900FC9B21 /* p_weapon.c */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		D22A7C6009F42BBD00FC9B21 /* Monsters */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C7809F42C2200FC9B21 /* Headers */,
+				D22A7C7C09F42C3D00FC9B21 /* m_actor.c */,
+				D22A7C7E09F42C3D00FC9B21 /* m_berserk.c */,
+				D22A7C8009F42C3D00FC9B21 /* m_boss2.c */,
+				D22A7C8209F42C3D00FC9B21 /* m_boss3.c */,
+				D22A7C8309F42C3D00FC9B21 /* m_boss31.c */,
+				D22A7C8509F42C3D00FC9B21 /* m_boss32.c */,
+				D22A7C8709F42C3D00FC9B21 /* m_brain.c */,
+				D22A7C8909F42C3D00FC9B21 /* m_carrier.c */,
+				D22A7C8B09F42C3D00FC9B21 /* m_chick.c */,
+				D22A7C8D09F42C3D00FC9B21 /* m_flash.c */,
+				D22A7C8E09F42C3D00FC9B21 /* m_flipper.c */,
+				D22A7C9009F42C3D00FC9B21 /* m_float.c */,
+				D22A7C9209F42C3D00FC9B21 /* m_flyer.c */,
+				D22A7C9409F42C3D00FC9B21 /* m_gladiator.c */,
+				D22A7C9609F42C3D00FC9B21 /* m_gunner.c */,
+				D22A7C9809F42C3D00FC9B21 /* m_hover.c */,
+				D22A7C9A09F42C3D00FC9B21 /* m_infantry.c */,
+				D22A7C9C09F42C3D00FC9B21 /* m_insane.c */,
+				D22A7C9E09F42C3E00FC9B21 /* m_medic.c */,
+				D22A7CA009F42C3E00FC9B21 /* m_move.c */,
+				D22A7CA109F42C3E00FC9B21 /* m_move2.c */,
+				D22A7CA209F42C3E00FC9B21 /* m_mutant.c */,
+				D22A7CA409F42C3E00FC9B21 /* m_parasite.c */,
+				D22A7CA809F42C3E00FC9B21 /* m_soldier.c */,
+				D22A7CAA09F42C3E00FC9B21 /* m_stalker.c */,
+				D22A7CAC09F42C3E00FC9B21 /* m_supertank.c */,
+				D22A7CAE09F42C3E00FC9B21 /* m_tank.c */,
+				D22A7CB009F42C3E00FC9B21 /* m_turret.c */,
+				D22A7CB209F42C3E00FC9B21 /* m_widow.c */,
+				D22A7CB409F42C3E00FC9B21 /* m_widow2.c */,
+			);
+			name = Monsters;
+			sourceTree = "<group>";
+		};
+		D22A7C6109F42BC200FC9B21 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7CD409F42CC400FC9B21 /* Headers */,
+				D22A7CE309F42CDE00FC9B21 /* g_ai.c */,
+				D22A7CE409F42CDE00FC9B21 /* g_chase.c */,
+				D22A7CE509F42CDE00FC9B21 /* g_cmds.c */,
+				D22A7CE609F42CDE00FC9B21 /* g_combat.c */,
+				D22A7CE709F42CDE00FC9B21 /* g_func.c */,
+				D22A7CE809F42CDE00FC9B21 /* g_items.c */,
+				D22A7CEA09F42CDE00FC9B21 /* g_main.c */,
+				D22A7CEB09F42CDE00FC9B21 /* g_misc.c */,
+				D22A7CEC09F42CDE00FC9B21 /* g_monster.c */,
+				D22A7CED09F42CDE00FC9B21 /* g_newai.c */,
+				D22A7CEE09F42CDE00FC9B21 /* g_newdm.c */,
+				D22A7CEF09F42CDE00FC9B21 /* g_newfnc.c */,
+				D22A7CF009F42CDE00FC9B21 /* g_newtarg.c */,
+				D22A7CF109F42CDE00FC9B21 /* g_newtrig.c */,
+				D22A7CF209F42CDE00FC9B21 /* g_newweap.c */,
+				D22A7CF309F42CDE00FC9B21 /* g_phys.c */,
+				D22A7CF409F42CDE00FC9B21 /* g_save.c */,
+				D22A7CF509F42CDE00FC9B21 /* g_spawn.c */,
+				D22A7CF609F42CDE00FC9B21 /* g_sphere.c */,
+				D22A7CF709F42CDE00FC9B21 /* g_svcmds.c */,
+				D22A7CF809F42CDE00FC9B21 /* g_target.c */,
+				D22A7CF909F42CDE00FC9B21 /* g_trigger.c */,
+				D22A7CFA09F42CDE00FC9B21 /* g_turret.c */,
+				D22A7CFB09F42CDE00FC9B21 /* g_utils.c */,
+				D22A7CFC09F42CDE00FC9B21 /* g_weapon.c */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		D22A7C6409F42BCE00FC9B21 /* Deathmatch */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7D1809F42D2000FC9B21 /* dm_ball.c */,
+				D22A7D1909F42D2000FC9B21 /* dm_tag.c */,
+			);
+			name = Deathmatch;
+			sourceTree = "<group>";
+		};
+		D22A7C7809F42C2200FC9B21 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7C7D09F42C3D00FC9B21 /* m_actor.h */,
+				D22A7C7F09F42C3D00FC9B21 /* m_berserk.h */,
+				D22A7C8109F42C3D00FC9B21 /* m_boss2.h */,
+				D22A7C8409F42C3D00FC9B21 /* m_boss31.h */,
+				D22A7C8609F42C3D00FC9B21 /* m_boss32.h */,
+				D22A7C8809F42C3D00FC9B21 /* m_brain.h */,
+				D22A7C8A09F42C3D00FC9B21 /* m_carrier.h */,
+				D22A7C8C09F42C3D00FC9B21 /* m_chick.h */,
+				D22A7C8F09F42C3D00FC9B21 /* m_flipper.h */,
+				D22A7C9109F42C3D00FC9B21 /* m_float.h */,
+				D22A7C9309F42C3D00FC9B21 /* m_flyer.h */,
+				D22A7C9509F42C3D00FC9B21 /* m_gladiator.h */,
+				D22A7C9709F42C3D00FC9B21 /* m_gunner.h */,
+				D22A7C9909F42C3D00FC9B21 /* m_hover.h */,
+				D22A7C9B09F42C3D00FC9B21 /* m_infantry.h */,
+				D22A7C9D09F42C3E00FC9B21 /* m_insane.h */,
+				D22A7C9F09F42C3E00FC9B21 /* m_medic.h */,
+				D22A7CA309F42C3E00FC9B21 /* m_mutant.h */,
+				D22A7CA509F42C3E00FC9B21 /* m_parasite.h */,
+				D22A7CA609F42C3E00FC9B21 /* m_player.h */,
+				D22A7CA709F42C3E00FC9B21 /* m_rider.h */,
+				D22A7CA909F42C3E00FC9B21 /* m_soldier.h */,
+				D22A7CAB09F42C3E00FC9B21 /* m_stalker.h */,
+				D22A7CAD09F42C3E00FC9B21 /* m_supertank.h */,
+				D22A7CAF09F42C3E00FC9B21 /* m_tank.h */,
+				D22A7CB109F42C3E00FC9B21 /* m_turret.h */,
+				D22A7CB309F42C3E00FC9B21 /* m_widow.h */,
+				D22A7CB509F42C3E00FC9B21 /* m_widow2.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D22A7CD409F42CC400FC9B21 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D22A7CE909F42CDE00FC9B21 /* g_local.h */,
+				D22A7D1709F42CF500FC9B21 /* game.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* GameMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "GameMac" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+			};
+			dependencies = (
+			);
+			name = GameMac;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = GameMacOSX;
+			productReference = 8D5B49B6048680CD000E48DA /* GameMac.q2plug */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "GameMac" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA420018CDE011CA2923 /* Debug */,
+				014CEA430018CDE011CA2923 /* Release */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* GameMacOSX */;
+			projectDirPath = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* GameMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22A7D1A09F42D2000FC9B21 /* dm_ball.c in Sources */,
+				D22A7D1B09F42D2000FC9B21 /* dm_tag.c in Sources */,
+				D22A7CFD09F42CDE00FC9B21 /* g_ai.c in Sources */,
+				D22A7CFE09F42CDE00FC9B21 /* g_chase.c in Sources */,
+				D22A7CFF09F42CDE00FC9B21 /* g_cmds.c in Sources */,
+				D22A7D0009F42CDE00FC9B21 /* g_combat.c in Sources */,
+				D22A7D0109F42CDE00FC9B21 /* g_func.c in Sources */,
+				D22A7D0209F42CDE00FC9B21 /* g_items.c in Sources */,
+				D22A7D0309F42CDE00FC9B21 /* g_main.c in Sources */,
+				D22A7D0409F42CDE00FC9B21 /* g_misc.c in Sources */,
+				D22A7D0509F42CDE00FC9B21 /* g_monster.c in Sources */,
+				D22A7D0609F42CDE00FC9B21 /* g_newai.c in Sources */,
+				D22A7D0709F42CDE00FC9B21 /* g_newdm.c in Sources */,
+				D22A7D0809F42CDE00FC9B21 /* g_newfnc.c in Sources */,
+				D22A7D0909F42CDE00FC9B21 /* g_newtarg.c in Sources */,
+				D22A7D0A09F42CDE00FC9B21 /* g_newtrig.c in Sources */,
+				D22A7D0B09F42CDE00FC9B21 /* g_newweap.c in Sources */,
+				D22A7D0C09F42CDE00FC9B21 /* g_phys.c in Sources */,
+				D22A7D0D09F42CDE00FC9B21 /* g_save.c in Sources */,
+				D22A7D0E09F42CDE00FC9B21 /* g_spawn.c in Sources */,
+				D22A7D0F09F42CDE00FC9B21 /* g_sphere.c in Sources */,
+				D22A7D1009F42CDE00FC9B21 /* g_svcmds.c in Sources */,
+				D22A7D1109F42CDE00FC9B21 /* g_target.c in Sources */,
+				D22A7D1209F42CDE00FC9B21 /* g_trigger.c in Sources */,
+				D22A7D1309F42CDE00FC9B21 /* g_turret.c in Sources */,
+				D22A7D1409F42CDE00FC9B21 /* g_utils.c in Sources */,
+				D22A7D1509F42CDE00FC9B21 /* g_weapon.c in Sources */,
+				D22A7CB609F42C3E00FC9B21 /* m_actor.c in Sources */,
+				D22A7CB709F42C3E00FC9B21 /* m_berserk.c in Sources */,
+				D22A7CB809F42C3E00FC9B21 /* m_boss2.c in Sources */,
+				D22A7CB909F42C3E00FC9B21 /* m_boss3.c in Sources */,
+				D22A7CBA09F42C3E00FC9B21 /* m_boss31.c in Sources */,
+				D22A7CBB09F42C3E00FC9B21 /* m_boss32.c in Sources */,
+				D22A7CBC09F42C3E00FC9B21 /* m_brain.c in Sources */,
+				D22A7CBD09F42C3E00FC9B21 /* m_carrier.c in Sources */,
+				D22A7CBE09F42C3E00FC9B21 /* m_chick.c in Sources */,
+				D22A7CBF09F42C3E00FC9B21 /* m_flash.c in Sources */,
+				D22A7CC009F42C3E00FC9B21 /* m_flipper.c in Sources */,
+				D22A7CC109F42C3E00FC9B21 /* m_float.c in Sources */,
+				D22A7CC209F42C3E00FC9B21 /* m_flyer.c in Sources */,
+				D22A7CC309F42C3E00FC9B21 /* m_gladiator.c in Sources */,
+				D22A7CC409F42C3E00FC9B21 /* m_gunner.c in Sources */,
+				D22A7CC509F42C3E00FC9B21 /* m_hover.c in Sources */,
+				D22A7CC609F42C3E00FC9B21 /* m_infantry.c in Sources */,
+				D22A7CC709F42C3E00FC9B21 /* m_insane.c in Sources */,
+				D22A7CC809F42C3E00FC9B21 /* m_medic.c in Sources */,
+				D22A7CC909F42C3E00FC9B21 /* m_move.c in Sources */,
+				D22A7CCB09F42C3E00FC9B21 /* m_mutant.c in Sources */,
+				D22A7CCC09F42C3E00FC9B21 /* m_parasite.c in Sources */,
+				D22A7CCD09F42C3E00FC9B21 /* m_soldier.c in Sources */,
+				D22A7CCE09F42C3E00FC9B21 /* m_stalker.c in Sources */,
+				D22A7CCF09F42C3E00FC9B21 /* m_supertank.c in Sources */,
+				D22A7CD009F42C3E00FC9B21 /* m_tank.c in Sources */,
+				D22A7CD109F42C3E00FC9B21 /* m_turret.c in Sources */,
+				D22A7CD209F42C3E00FC9B21 /* m_widow.c in Sources */,
+				D22A7CD309F42C3E00FC9B21 /* m_widow2.c in Sources */,
+				D22A7C7309F42C1900FC9B21 /* p_client.c in Sources */,
+				D22A7C7409F42C1900FC9B21 /* p_hud.c in Sources */,
+				D22A7C7509F42C1900FC9B21 /* p_trail.c in Sources */,
+				D22A7C7609F42C1900FC9B21 /* p_view.c in Sources */,
+				D22A7C7709F42C1900FC9B21 /* p_weapon.c in Sources */,
+				D22A7C6909F42C0200FC9B21 /* q_shared.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = C_ONLY;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = GameMac;
+				WRAPPER_EXTENSION = q2plug;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = C_ONLY;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = GameMac;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = q2plug;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "GameMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "GameMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
