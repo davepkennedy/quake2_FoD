@@ -127,7 +127,7 @@ void	Sys_Error (char *theError, ...)
 
 #else
 
-    NSLog (@"An error has occured: %@\n", [NSString stringWithCString: myString]);
+    NSLog (@"An error has occured: %@\n", [NSString stringWithUTF8String: myString]);
 
     CL_Shutdown ();
     Qcommon_Shutdown ();
@@ -136,7 +136,7 @@ void	Sys_Error (char *theError, ...)
     IN_SetKeyboardRepeatEnabled (YES);
     IN_SetF12EjectEnabled (YES);
     
-    NSRunCriticalAlertPanel (@"An error has occured:", [NSString stringWithCString: myString],
+    NSRunCriticalAlertPanel (@"An error has occured:", [NSString stringWithUTF8String: myString],
                              NULL, NULL, NULL);
     
     exit (1);
@@ -384,7 +384,7 @@ char *	Sys_GetClipboardData (void)
         myClipboardString = [myPasteboard stringForType: NSStringPboardType];
         if (myClipboardString != NULL && [myClipboardString length] > 0)
         {
-            return (strdup ([myClipboardString cString]));
+            return (strdup ([myClipboardString UTF8String]));
         }
     }
     return (NULL);
@@ -489,7 +489,7 @@ void 	Sys_CheckForCDDirectory (void)
     // is the cd mounted?
     for (i = 0; gSysCDPath[i] != NULL; i++)
     {
-        myCurrentPath = [[NSString stringWithCString: gSysCDPath[i]] stringByAppendingString: @"/baseq2/pak0.pak"];
+        myCurrentPath = [[NSString stringWithUTF8String: gSysCDPath[i]] stringByAppendingString: @"/baseq2/pak0.pak"];
         
 		if ([[NSFileManager defaultManager] fileExistsAtPath: myCurrentPath])
         {
@@ -568,7 +568,7 @@ void	Sys_CheckForIDDirectory (void)
 						myFileExists = [[NSFileManager defaultManager] fileExistsAtPath: myValidatePath];
 					}
 
-#endif __ppc__
+#endif //__ppc__
 					
 					if (myFileExists == YES)
 					{

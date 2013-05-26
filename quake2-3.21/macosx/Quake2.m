@@ -183,8 +183,8 @@
     }
                         
     if ((vid_fullscreen != NULL && vid_fullscreen->value != 0.0f) ||
-        ((in_mouse == NULL || (in_mouse != NULL && in_mouse->value == 0.0f) &&
-         (_windowed_mouse != NULL && _windowed_mouse->value != 0.0f))))
+        (((in_mouse == NULL || (in_mouse != NULL && in_mouse->value == 0.0f)) &&
+         ((_windowed_mouse != NULL && _windowed_mouse->value != 0.0f)))))
     {
         IN_ShowCursor (NO);
     }
@@ -532,7 +532,7 @@
         {
             if ([myArgument characterAtIndex: 0] == '\"')
             {
-                myArgument = [NSString stringWithString: @""];
+                myArgument = @"";
                 for (; i < [mySeparatedArguments count]; i++)
                 {
                     myArgument = [myArgument stringByAppendingString: [mySeparatedArguments objectAtIndex: i]];
@@ -632,7 +632,7 @@
 		{
 			NSString	*myCommand = [mRequestedCommands objectAtIndex: 0];
 
-			Cbuf_ExecuteText (EXEC_APPEND, va("%s\n", [myCommand cString]));
+			Cbuf_ExecuteText (EXEC_APPEND, va("%s\n", [myCommand UTF8String]));
 			[mRequestedCommands removeObjectAtIndex: 0];
 		}
 				    
@@ -864,7 +864,7 @@
         myRequestedServer = [thePasteboard stringForType: NSStringPboardType];
         if (myRequestedServer != NULL)
         {
-            Cbuf_ExecuteText (EXEC_APPEND, va("connect %s\n", [myRequestedServer cString]));
+            Cbuf_ExecuteText (EXEC_APPEND, va("connect %s\n", [myRequestedServer UTF8String]));
             return;
         }
     }

@@ -149,7 +149,7 @@ static void						GLimp_CheckForARBMultiSample (void);
 
 qboolean GLimp_Screenshot (SInt8 *theFilename, void *theBitmap, UInt32 theWidth, UInt32 theHeight, UInt32 theRowbytes)
 {
-    NSString *	myFilename		= [NSString stringWithCString: (const char*) theFilename];
+    NSString *	myFilename		= [NSString stringWithUTF8String: (const char*) theFilename];
     NSSize		myBitmapSize	= NSMakeSize ((float) theWidth, (float) theHeight);
     
     return ([FDScreenshot writeToPNG: myFilename fromRGB24: theBitmap withSize: myBitmapSize rowbytes: theRowbytes]);
@@ -528,7 +528,7 @@ void	GLimp_SetSwapInterval (void)
             }
         }
         [gGLContext makeCurrentContext];
-        CGLSetParameter (CGLGetCurrentContext (), kCGLCPSwapInterval, &myCurSwapInterval);
+        CGLSetParameter (CGLGetCurrentContext (), kCGLCPSwapInterval, (GLint*)&myCurSwapInterval);
         gGLSwapInterval->modified = NO;
     }
 }
@@ -670,13 +670,13 @@ void	GLimp_SetARBMultiSample (void)
 void	GLimp_CheckForARBMultiSample (void)
 {
 
-    CGLRendererInfoObj			myRendererInfo;
+    CGLRendererInfoObj		myRendererInfo;
     CGLError				myError;
-    UInt64				myDisplayMask;
-    long				myCount,
-                                        myIndex,
-                                        mySampleBuffers,
-                                        mySamples;
+    UInt64                  myDisplayMask;
+    GLint                   myCount,
+                            myIndex,
+                            mySampleBuffers,
+                            mySamples;
 
     // reset out global values:
     gGLMaxARBMultiSampleBuffers = 0;

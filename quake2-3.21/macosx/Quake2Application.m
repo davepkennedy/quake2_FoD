@@ -95,7 +95,7 @@
             // required because of the options dialog - we have to wait with the command until host_init() is finished!
             if ([[self delegate] hostInitialized] == YES)
             {
-                Cbuf_ExecuteText (EXEC_APPEND, va("%s\n", [myCommandList cString]));
+                Cbuf_ExecuteText (EXEC_APPEND, va("%s\n", [myCommandList UTF8String]));
             }
             else
             {

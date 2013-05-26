@@ -107,8 +107,6 @@
 		D2304EB609F149AA008F4BE0 /* ref_gl.q2plug in CopyFiles */ = {isa = PBXBuildFile; fileRef = D238716F09E1B50D00C1E540 /* ref_gl.q2plug */; };
 		D2304EB709F149AA008F4BE0 /* ref_soft.q2plug in CopyFiles */ = {isa = PBXBuildFile; fileRef = D238717B09E1B53000C1E540 /* ref_soft.q2plug */; };
 		D235F7DD09F0261300462FE6 /* Quake2Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D235F7DB09F0261300462FE6 /* Quake2Toolbar.m */; };
-		D238719409E1B59200C1E540 /* dlopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D238719309E1B59200C1E540 /* dlopen.c */; };
-		D238719509E1B59200C1E540 /* dlopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D238719309E1B59200C1E540 /* dlopen.c */; };
 		D23871AA09E1B5D600C1E540 /* in_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D23871A909E1B5D600C1E540 /* in_osx.m */; };
 		D23871AE09E1B5E400C1E540 /* net_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = D23871AD09E1B5E400C1E540 /* net_udp.c */; };
 		D23871AF09E1B5E400C1E540 /* net_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = D23871AD09E1B5E400C1E540 /* net_udp.c */; };
@@ -575,8 +573,6 @@
 		D238716F09E1B50D00C1E540 /* ref_gl.q2plug */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ref_gl.q2plug; sourceTree = BUILT_PRODUCTS_DIR; };
 		D238717B09E1B53000C1E540 /* ref_soft.q2plug */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ref_soft.q2plug; sourceTree = BUILT_PRODUCTS_DIR; };
 		D238718609E1B54700C1E540 /* Read Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Read Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D238719209E1B59200C1E540 /* dlfcn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dlfcn.h; path = dlcompat/dlfcn.h; sourceTree = "<group>"; };
-		D238719309E1B59200C1E540 /* dlopen.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dlopen.c; path = dlcompat/dlopen.c; sourceTree = "<group>"; };
 		D23871A109E1B5B500C1E540 /* cd_osx.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = cd_osx.m; sourceTree = "<group>"; };
 		D23871A909E1B5D600C1E540 /* in_osx.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = in_osx.m; sourceTree = "<group>"; };
 		D23871AD09E1B5E400C1E540 /* net_udp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = net_udp.c; sourceTree = "<group>"; };
@@ -1161,7 +1157,6 @@
 			isa = PBXGroup;
 			children = (
 				D238795709E1DAC100C1E540 /* Headers */,
-				D238710C09E1A2CD00C1E540 /* dl compatibility */,
 				D24531E609EB0FA7002AA1CB /* FDLinkView.m */,
 				D245322809EB148E002AA1CB /* FDModifierCheck.m */,
 				D23877F209E1C7DF00C1E540 /* cd_null.c */,
@@ -1177,15 +1172,6 @@
 				D23871C209E1B61700C1E540 /* vid_osx.m */,
 			);
 			name = "MacOS X";
-			sourceTree = "<group>";
-		};
-		D238710C09E1A2CD00C1E540 /* dl compatibility */ = {
-			isa = PBXGroup;
-			children = (
-				D238719209E1B59200C1E540 /* dlfcn.h */,
-				D238719309E1B59200C1E540 /* dlopen.c */,
-			);
-			name = "dl compatibility";
 			sourceTree = "<group>";
 		};
 		D238710D09E1A2DA00C1E540 /* Headers */ = {
@@ -1875,7 +1861,6 @@
 				D238723709E1B72200C1E540 /* console.c in Sources */,
 				D238720409E1B6BE00C1E540 /* crc.c in Sources */,
 				D238720509E1B6BE00C1E540 /* cvar.c in Sources */,
-				D238719409E1B59200C1E540 /* dlopen.c in Sources */,
 				D238720609E1B6BE00C1E540 /* files.c in Sources */,
 				D238728E09E1B82D00C1E540 /* glob.c in Sources */,
 				D238723809E1B72200C1E540 /* keys.c in Sources */,
@@ -1925,7 +1910,6 @@
 				D238720B09E1B6BE00C1E540 /* cvar.c in Sources */,
 				D238720C09E1B6BE00C1E540 /* files.c in Sources */,
 				D23877F309E1C7DF00C1E540 /* cd_null.c in Sources */,
-				D238719509E1B59200C1E540 /* dlopen.c in Sources */,
 				D238729009E1B82D00C1E540 /* glob.c in Sources */,
 				D238720D09E1B6BE00C1E540 /* md4.c in Sources */,
 				D238720E09E1B6BE00C1E540 /* net_chan.c in Sources */,
@@ -2206,7 +2190,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = macosx;
 				SHARED_PRECOMPS_DIR = "";
@@ -2220,7 +2204,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = macosx;
 				SHARED_PRECOMPS_DIR = "";
