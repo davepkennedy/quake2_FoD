@@ -583,21 +583,21 @@ void	GLimp_SetTruform (void)
             }
             
             // enable pn_triangles. lightning required due to a bug of OpenGL!
-            qglEnable (GL_PN_TRIANGLES_ATIX);
+            //qglEnable (GL_PN_TRIANGLES_ATIX);
             qglEnable (GL_LIGHTING);
             qglLightModelfv (GL_LIGHT_MODEL_AMBIENT, gGLTruformAmbient);
             qglEnable (GL_COLOR_MATERIAL);
         
             // point mode:
             //qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATIX, GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATIX);
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATIX, GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATIX);
+            //qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATIX, GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATIX);
             
             // normal mode (no normals used at all by Quake):
             //qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATIX, GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATIX);
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATIX, GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATIX);
+            //qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATIX, GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATIX);
         
             // tesselation level:
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_TESSELATION_LEVEL_ATIX, myPNTriangleLevel);
+            //qglPNTrianglesiATIX (GL_PN_TRIANGLES_TESSELATION_LEVEL_ATIX, myPNTriangleLevel);
         }
         else
         {
@@ -606,7 +606,7 @@ void	GLimp_SetTruform (void)
                 myPNTriangleLevel = -1;
                 ri.Cvar_SetValue ("gl_truform", myPNTriangleLevel);
             }
-            qglDisable (GL_PN_TRIANGLES_ATIX);
+            //qglDisable (GL_PN_TRIANGLES_ATIX);
             qglDisable (GL_LIGHTING);
         }
         gGLTrufomTesselationLevel->modified = NO;
