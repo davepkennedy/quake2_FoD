@@ -523,12 +523,12 @@ void	Sys_CheckForIDDirectory (void)
     char *				myBaseDir		= NULL;
     BOOL				myFirstRun		= YES;
 	BOOL				myDefaultPath	= YES;
-	BOOL				myPathChanged	= NO;
+	__block BOOL		myPathChanged	= NO;
 	BOOL				myFileExists	= NO;
     NSString *			myValidatePath	= nil;
     NSUserDefaults *	myDefaults		= [NSUserDefaults standardUserDefaults];
-	NSString *			myBasePath		= [myDefaults stringForKey: SYS_DEFAULT_BASE_PATH];
-    NSArray	*			myFolder;
+	__block NSString *	myBasePath		= [myDefaults stringForKey: SYS_DEFAULT_BASE_PATH];
+    __block NSArray	*	myFolder;
     SInt				myResult;
 	SInt				myPathLength;
 
@@ -635,20 +635,18 @@ void	Sys_CheckForIDDirectory (void)
             }
         
 			// request the "baseq2" folder:
-			myResult = [myOpenPanel runModalForDirectory: nil file: nil types: nil];
-			
-			// if the user selected "Cancel", quit the game:
-			if (myResult == NSOKButton)
-			{	
-				// get the selected path:
-				myFolder = [myOpenPanel filenames];
-				
-				if ([myFolder count])
-				{
-					myBasePath = [myFolder objectAtIndex: 0];
-					myPathChanged = YES;
-				}
-			}
+            [myOpenPanel beginWithCompletionHandler:^(NSInteger result) {
+                if (result == NSOKButton) {
+                    // get the selected path:
+                    myFolder = [myOpenPanel URLs];
+                    
+                    if ([myFolder count])
+                    {
+                        myBasePath = [myFolder objectAtIndex: 0];
+                        myPathChanged = YES;
+                    }
+                }
+            }];
 			
 			[myOpenPanel release];
 			
@@ -904,3 +902,9 @@ int	main (int theArgCount, const char **theArgValues)
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Sys_PostKeyboardEvent(CGCharCode keyChar, CGKeyCode virtualKey, BOOL keyDown) {
+    CGEventRef e = CGEventCreateKeyboardEvent (NULL, (CGKeyCode)virtualKey, keyDown);
+    CGEventPost(kCGSessionEventTap, e);
+    CFRelease(e);
+}
+

@@ -98,3 +98,4 @@ void 	Sys_CheckForCDDirectory (void);
 void	Sys_CheckForIDDirectory (void);
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Sys_PostKeyboardEvent(CGCharCode keyChar, CGKeyCode virtualKey, BOOL keyDown);

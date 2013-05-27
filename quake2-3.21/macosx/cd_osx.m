@@ -128,12 +128,12 @@ void	CDAudio_Error (cderror_t theErrorNumber)
 SInt32	CDAudio_StripVideoTracks (Movie theMovie)
 {
 	SInt64	i = GetMovieTrackCount (theMovie);
-
+    
     for (; i >= 1; i--)
     {
         Track		myCurTrack = GetMovieIndTrack (theMovie, i);
         OSType 	myMediaType;
-
+        
         GetMediaHandlerDescription (GetTrackMedia (myCurTrack), &myMediaType, NULL, NULL);
 		
         if (myMediaType != SoundMediaType && myMediaType != MusicMediaType)
@@ -141,7 +141,7 @@ SInt32	CDAudio_StripVideoTracks (Movie theMovie)
             DisposeMovieTrack (myCurTrack);
         }
     }
-
+    
     return (GetMovieTrackCount (theMovie));
 }
 
@@ -150,9 +150,9 @@ SInt32	CDAudio_StripVideoTracks (Movie theMovie)
 void	CDAudio_AddTracks2List (NSString *theMountPath, NSArray *theExtensions)
 {
     NSFileManager		*myFileManager = [NSFileManager defaultManager];
-
+    
     NSDirectoryEnumerator	*myDirEnum = [myFileManager enumeratorAtPath: theMountPath];
-
+    
     if (myDirEnum != NULL)
     {
         for (NSString* myFilePath in myDirEnum) {
@@ -283,7 +283,7 @@ void	CDAudio_Update (void)
      if (gCDController != NULL)
      {
      SetMovieVolume (gCDController, kFullVolume * cd_volume->value);
-
+     
      if (GetMovieActive (gCDController) == YES)
      {
      if (IsMovieDone (gCDController) == NO)
@@ -337,7 +337,7 @@ void	CDAudio_Enable (BOOL theState)
                 CDAudio_Resume ();
             }
         }
-
+        
         myCDIsEnabled = theState;
     }
 }
@@ -355,9 +355,9 @@ int	CDAudio_Init (void)
         Cmd_AddCommand ("mp3", CD_f);
         Cmd_AddCommand ("mp4", CD_f);
     }
-
+    
     trackNumber = 0;
-
+    
     if (trackList != NULL)
     {
         if ([[NSApp delegate] mediaFolder] == NULL)
@@ -368,10 +368,10 @@ int	CDAudio_Init (void)
         {
             Con_Print ("QuickTime MP3/MP4 driver initialized...\n");
         }
-
+        
         return (1);
     }
-
+    
     Con_Print ("QuickTime MP3/MP4 driver failed.\n");
     return (0);
 }
@@ -382,11 +382,11 @@ void	CDAudio_Shutdown (void)
 {
     // shutdown the audio IO:
     CDAudio_Stop ();
-
+    
     if (trackList) {
         [trackList release];
     }
-
+    
     if (trackData) {
         [trackData release];
     }
@@ -411,7 +411,7 @@ void CD_Reset(void) {
     {
         CDAudio_Error (CDERR_NO_FILES_FOUND);
     }
-
+    
 }
 
 void CD_Info(void) {
@@ -438,16 +438,16 @@ void CD_Info(void) {
 void	CD_f (void)
 {
     char	*myCommandOption;
-
+    
     // this command requires options!
     if (Cmd_Argc () < 2)
     {
         return;
     }
-
+    
     // get the option:
     myCommandOption = Cmd_Argv (1);
-
+    
     // turn CD playback on:
     if (Q_strcasecmp (myCommandOption, "on") == 0)
     {

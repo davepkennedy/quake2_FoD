@@ -15,6 +15,7 @@
 
 #import <AppKit/AppKit.h>
 #import "FDModifierCheck.h"
+#import "sys_osx.h"
 
 #pragma mark -
 
@@ -32,8 +33,8 @@
     BOOL				myModifierWasPressed = NO;    
 
     // raise shift down/up events [from somewhere deep inside CoreGraphics]:
-    CGPostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 56, YES);
-    CGPostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 56, NO);
+    Sys_PostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 56, YES);
+    Sys_PostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 56, NO);
 
     while (1)
     {

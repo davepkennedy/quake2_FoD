@@ -26,8 +26,9 @@
 
 - (void) sendEvent: (NSEvent *) theEvent
 {
+    Quake2* delegate = [self delegate];
     // we need to intercept NSApps "sendEvent:" action:
-    if ([[self delegate] hostInitialized] == YES)
+    if ([delegate hostInitialized] == YES)
     {
         if ([NSApp isHidden] == YES)
         {
@@ -56,7 +57,8 @@
 
 - (void) handleRunCommand: (NSScriptCommand *) theCommand
 {
-    if ([[self delegate] allowAppleScriptRun] == YES)
+    Quake2* delegate = [self delegate];
+    if ([delegate allowAppleScriptRun] == YES)
     {
         NSDictionary *	myArguments = [theCommand evaluatedArguments];
     
@@ -67,15 +69,15 @@
             // Check if we got command line parameters:
             if (myParameters != nil && [myParameters isEqualToString: @""] == NO)
             {
-                [[self delegate] stringToParameters: myParameters];
+                [delegate stringToParameters: myParameters];
             }
             else
             {
-                [[self delegate] stringToParameters: @""];
+                [delegate stringToParameters: @""];
             }
         }
 		
-		[[self delegate] enableAppleScriptRun: NO];
+		[delegate enableAppleScriptRun: NO];
     }
 }
 
@@ -92,14 +94,15 @@
         // Send the console command only if we got commands:
         if (myCommandList != nil && [myCommandList isEqualToString: @""] == NO)
         {
+            Quake2* delegate = [self delegate];
             // required because of the options dialog - we have to wait with the command until host_init() is finished!
-            if ([[self delegate] hostInitialized] == YES)
+            if ([delegate hostInitialized] == YES)
             {
                 Cbuf_ExecuteText (EXEC_APPEND, va("%s\n", [myCommandList UTF8String]));
             }
             else
             {
-				[[self delegate] requestCommand: myCommandList];
+				[delegate requestCommand: myCommandList];
             }
         }
     }
