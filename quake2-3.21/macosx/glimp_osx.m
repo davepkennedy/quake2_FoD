@@ -127,6 +127,7 @@ cvar_t *					gGLOverbrightGamma			= NULL;
 static long					gGLMaxARBMultiSamples		= 0;
 static const float			gGLTruformAmbient[4]		= { 1.0f, 1.0f, 1.0f, 1.0f };
 
+
 #pragma mark -
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -803,37 +804,29 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
         CFDictionaryRef		myDisplayMode;
         boolean_t			myExactMatch;
 
-        if (CGDisplayIsCaptured (kCGDirectMainDisplay) != true)
-        {
+        if (CGDisplayIsCaptured (kCGDirectMainDisplay) != true) {
             GL_CAPTURE_DISPLAYS();
         }
         
         // force 16bit OpenGL display?
-        if ((ri.Cvar_Get ("gl_force16bit", "0", 0))->value != 0.0f)
-        {
+        if ((ri.Cvar_Get ("gl_force16bit", "0", 0))->value != 0.0f) {
             myDisplayDepth = 16;
-        }
-        else
-        {
+        } else {
             myDisplayDepth = 32;
         }
         
         // get the requested mode:
-        if (theRefreshRate > 0)
-        {
+        if (theRefreshRate > 0) {
             myDisplayMode = CGDisplayBestModeForParametersAndRefreshRate (kCGDirectMainDisplay, myDisplayDepth,
                                                                           *theWidth, *theHeight, theRefreshRate,
                                                                           &myExactMatch);
-        }
-        else
-        {
+        } else {
             myDisplayMode = CGDisplayBestModeForParameters (kCGDirectMainDisplay, myDisplayDepth, *theWidth,
                                                             *theHeight, &myExactMatch);
         }
 
         // got we an exact mode match? if not report the new resolution again:
-        if (myExactMatch == NO)
-        {
+        if (myExactMatch == NO) {
             *theWidth	= [[(NSDictionary *) myDisplayMode objectForKey: (NSString *) kCGDisplayWidth] intValue];
             *theHeight	= [[(NSDictionary *) myDisplayMode objectForKey: (NSString *) kCGDisplayHeight] intValue];
 			
@@ -841,17 +834,13 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
         }
 
         // switch to the new display mode:
-        if (CGDisplaySwitchToMode (kCGDirectMainDisplay, myDisplayMode) != kCGErrorSuccess)
-        {
+        if (CGDisplaySwitchToMode (kCGDirectMainDisplay, myDisplayMode) != kCGErrorSuccess) {
             ri.Sys_Error (ERR_FATAL, "Can\'t switch to the selected mode!\n");
         }
 
         myDisplayDepth = [[(NSDictionary *) myDisplayMode objectForKey: (id) kCGDisplayBitsPerPixel] intValue];
-    }
-    else
-    {
-        if (gGLOriginalMode)
-        {
+    } else {
+        if (gGLOriginalMode) {
             CGDisplaySwitchToMode (kCGDirectMainDisplay, gGLOriginalMode);
         }
     
@@ -862,15 +851,12 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
     GLimp_CheckForARBMultiSample ();
     
     // get the pixel format [the loop is just for sample buffer failures]:
-    while (myPixelFormat == NULL)
-    {
+    while (myPixelFormat == NULL) {
         if (gGLARBMultiSampleLevel->value < 0.0f)
             gGLARBMultiSampleLevel->value = 0.0f;
 
-        if ((myPixelFormat = GLimp_CreateGLPixelFormat (myDisplayDepth, theFullscreen)) == NULL)
-        {
-            if (gGLARBMultiSampleLevel->value == 0.0f)
-            {
+        if ((myPixelFormat = GLimp_CreateGLPixelFormat (myDisplayDepth, theFullscreen)) == NULL) {
+            if (gGLARBMultiSampleLevel->value == 0.0f) {
                 ri.Sys_Error (ERR_FATAL,"Unable to find a matching pixelformat. Please try other displaymode(s).");
             }
             gGLARBMultiSampleLevel->value -= 4.0;
@@ -878,24 +864,19 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
     }
 
     // initialize the OpenGL context:
-    if (!(gGLContext = [[NSOpenGLContext alloc] initWithFormat: myPixelFormat shareContext: nil]))
-    {
+    if (!(gGLContext = [[NSOpenGLContext alloc] initWithFormat: myPixelFormat shareContext: nil])) {
         ri.Sys_Error (ERR_FATAL, "Unable to create an OpenGL context. Please try other displaymode(s).");
     }
 
     // get rid of the pixel format:
     [myPixelFormat release];
 
-    if (theFullscreen)
-    {
+    if (theFullscreen) {
         // attach the OpenGL context to fullscreen:
-        if (CGLSetFullScreen ([gGLContext cglContext]) != CGDisplayNoErr)
-        {
+        if (CGLSetFullScreen ([gGLContext cglContext]) != CGDisplayNoErr) {
             ri.Sys_Error (ERR_FATAL, "Unable to use the selected displaymode for fullscreen OpenGL.");
         }
-    }
-    else
-    {
+    } else {
         cvar_t *	myVidPosX		= ri.Cvar_Get ("vid_xpos", "0", 0);
         cvar_t *	myVidPosY		= ri.Cvar_Get ("vid_ypos", "0", 0);
         NSRect 		myContentRect	= NSMakeRect (myVidPosX->value, myVidPosY->value, *theWidth, *theHeight);
@@ -906,8 +887,7 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
                                                   backing: NSBackingStoreBuffered
                                                     defer: NO];
 
-        if (gGLWindow == NULL)
-        {
+        if (gGLWindow == NULL) {
             ri.Sys_Error (ERR_FATAL, "Unable to create window!\n");
         }
 
@@ -939,8 +919,7 @@ Boolean	GLimp_InitGraphics (int *theWidth, int *theHeight, float theRefreshRate,
         [gGLWindow flushWindow];
         [gGLWindow setAcceptsMouseMovedEvents: YES];
         
-        if (CGDisplayIsCaptured (kCGDirectMainDisplay) == true)
-        {
+        if (CGDisplayIsCaptured (kCGDirectMainDisplay) == true) {
             GL_RELEASE_DISPLAYS ();
         }
 
